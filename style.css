@@ -1,0 +1,451 @@
+/* CSS files add styling rules to your content */
+
+
+html{
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100%; 
+}
+@media screen and (min-width: 701px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none; color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:hover img{
+    transform: scale(1.3);
+}
+
+/* Pink Line */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #D62598;
+    margin: 1em 0;
+    padding: 0;
+    margin-left: 40%;
+}
+
+#bigContainer{
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header{
+  background: white;
+  z-index: 99;
+}
+
+/* Start Nav Seccion */
+nav {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  position: fixed;
+  z-index: 100;
+  background: white;
+}
+
+#icon{
+  height: 20px;
+}
+
+#topSocial{
+  margin-right: 5%;
+  flex-grow: 1;
+  text-align: right;
+  align-items: flex-start;
+}
+#topSocial a {
+  margin-left: 5px;
+}
+#topSocial img {
+  margin-right: 8px;
+}
+/* End Nav Seccion*/
+
+/*Start Big Name Page */
+#bigTitleContainer{
+  position: relative;
+  height: calc(100% - 30px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bigTitle{
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  line-height: 1.5;
+}
+@media screen and (min-width: 701px) {
+  #bigTitle {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #bigTitle {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bigTitle {
+    font-size: 40px;
+  }
+}
+
+#bigSecondTitle{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 701px) {
+  #bigSecondTitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #bigSecondTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #bigSecondTitle {
+    font-size: 12px;
+  }
+}
+
+.projectsTitle{
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 701px) {
+  .projectsTitle{
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .projectsTitle{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projectsTitle{
+    font-size: 12px;
+  }
+}
+/* End Big Name Page */
+
+/* Start Projects Page */
+@media screen and (min-width: 741px) {
+  .projects{
+    flex-grow: 3;
+    position: relative;
+    height: calc(100% - 60px);
+    max-width: 60%vw;
+    
+    display: grid;
+    grid-template-columns: 33% 66%;
+    grid-template-rows: 55%;
+    grid-column-gap: 3%;
+  }
+  
+  .projectContainer1{
+    margin-left: auto;
+    height: 100%; 
+    max-width: 50%;
+  }
+  .projectContainer2{
+    display: grid;
+    margin-right: auto;
+    height: 95%; 
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 5%;
+    max-width: 40%;
+  }
+
+  .projectContainerSmallerUp{
+    margin-right: auto;
+ 
+  }
+  .projectContainerSmallerDown{
+    margin-right: auto;
+
+  }
+
+  .projectimage{
+      position: relative;
+      height: 100%;
+    }
+  .projectimage img {
+      max-width: 100%;
+      height: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #D62598;
+  }
+
+  .projectimage:hover .overlay {
+    opacity: 0.75;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .projects{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column-gap: 1%;
+  }
+
+  .projectContainer1{
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .projectContainer2{
+    display: grid;
+    margin-right: auto;
+    grid-row-gap: 1%;
+  }
+
+  .projectContainerSmallerUp{
+    display: grid;
+  }
+  .projectContainerSmallerDown{
+    display: grid;
+  }
+
+  .projectContainer1 .projectimage{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  .projectContainer1 .projectimage img {
+    margin-left: auto;
+    margin-right: auto; 
+    max-height: 80vh;
+    max-width: 100%;
+  }
+
+  .projectContainer2 .projectimage{
+     width: 100%;
+  }
+  .projectContainer2 .projectimage img {
+    width: 100%;
+  }
+
+  .projectContainer1 .projecttitle{
+    text-align: center;
+    margin-bottom: 15px;
+
+  }
+  .projectContainer2 .projecttitle{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    text-align: center;
+  } 
+}
+/* End Projects Page */
+
+/* Start About Me Page*/
+@media screen and (min-width: 741px) {
+  .content-subtitle{
+    position: relative;
+    height: calc(100% - 120px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  .aboutme-content{
+    flex-grow: 3;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  .sub-title{
+    flex-grow: 2;
+    position: relative;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .aboutme-content{
+    position: relative;
+    height: calc(100% - 120px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.aboutmeText{
+  margin-right: 5%;
+  margin-left: 10%;
+  flex-grow: 5;
+  min-width: 150px;
+  max-width: 400px;
+  mmargin-bottom: 20px;
+}
+
+.aboutme-content img{
+  max-width: 200px;
+  flex-grow: 1;
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.contactme {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+/* End About Me Page*/
+
+
+footer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  font-size: 30px;
+}
+
+h2{
+  font-family: 'Poiret One', cursive;
+  text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+@media screen and (min-width: 701px) {
+  h2 {
+    font-family: 'Poiret One', cursive;
+  text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 700px) {
+  h2{
+    font-family: 'Poiret One', cursive;
+  text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  h2 {
+    font-family: 'Poiret One', cursive;
+  text-align: left;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 40px;
+  }
+}
+h3 {
+  font-family: 'Roboto', cursive;
+  font-weight: bold;
+  text-align: left;
+  font-size: 25px;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+
+.clip-circle {
+  clip-path: circle(120px at 200px 120px);
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
