@@ -103,6 +103,10 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
+#bigTitleContainer img { 
+  max-height: 50%;
+}
+
 
 #bigTitle{
   font-family: 'Poiret One', cursive;
@@ -420,11 +424,13 @@ h2{
 }
 @media screen and (max-width: 450px) {
   h2 {
-    font-family: 'Poiret One', cursive;
-  text-align: left;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    font-size: 40px;
+   font-family: 'Poiret One', cursive;
+   line-height: 1.5;
+   font-family: 'Poiret One', cursive;
+   text-align: left;
+   margin-block-start: 0;
+   margin-block-end: 0;
+   font-size: 40px;
   }
 }
 h3 {
