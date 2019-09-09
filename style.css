@@ -7,6 +7,16 @@ html{
 }
 
 
+
+.projectimage{
+  position: relative;
+  height: 100%;
+}
+.projectimage img {
+  max-width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   height: 100%; 
@@ -183,7 +193,23 @@ nav {
 /* Start Main Page*/
 @media screen and (min-width: 741px) {
 
-  .bigContainerLeft{
+  .bigContainerProjects{
+    position: relative;
+    height: calc(100% - 170px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .smallContainerTitle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .bigContainerAbout{
     position: relative;
     height: calc(100% - 170px);
     width: 100%;
@@ -203,7 +229,15 @@ nav {
     flex-wrap: wrap-reverse;
   }
 
-  .containerContent{
+  .containerContentProjects{
+    flex-grow: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerContentAbout{
     flex-grow: 3;
     position: relative;
     display: flex;
@@ -216,15 +250,25 @@ nav {
     flex-grow: 2;
     position: relative;
     max-width: 100%;
-	font-family: 'Poiret One', cursive;
-	text-align: center;
-	line-height: 1;
+	  font-family: 'Poiret One', cursive;
+	  text-align: center;
+	  line-height: 1;
   }
+
+  .containerContentProjects img{
+    max-width: 30vw;
+    max-height: 30vw;
+    flex-grow: 1;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 @media screen and (max-width: 740px) {
 
-  .bigContainerLeft{
+  .bigContainerAbout{
     position: relative;
     height: calc(100% - 170px);
     width: 100%;
@@ -243,8 +287,17 @@ nav {
     align-items: center;
     flex-wrap: wrap-reverse;
   } 
-  
-  .containerContent{
+
+  .containerContentProjects{
+    flex-grow: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .containerContentAbout{
     flex-grow: 3;
     position: relative;
     display: flex;
@@ -252,23 +305,29 @@ nav {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
-	height: calc(100% - 120px);
-    width: 100%;
   }
   .containerTitle{
     flex-grow: 2;
     position: relative;
     max-width: 100%;
-	font-family: 'Poiret One', cursive;
-	text-align: center;
-	line-height: 1;
+	  font-family: 'Poiret One', cursive;
+	  text-align: center;
+	  line-height: 1;
   }
+
+  .containerContentProjects img{
+    max-width: 60vw;
+    max-height: 60vw;
+    flex-grow: 1;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
-.containerContent img{
-  max-width: 50vw;
-  max-height: 50vw;
-  flex-grow: 1;
+
+.containerContentAbout img{
   border-radius: 100%;
   padding: 5%;
 }
@@ -290,11 +349,8 @@ nav {
 }
 
 .contentText{
-  margin-right: 5%;
-  margin-left: 10%;
-  flex-grow: 5;
-  min-width: 150px;
-  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 30px;
 }
 
