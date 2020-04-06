@@ -9,16 +9,23 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto:300&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;500;600&family=Beth+Ellen&display=swap" >
     <script src="script.js" defer></script>
   </head>  
   
   <header>
     <!-- Top Nav -->
     <nav>
+      <div id="icon">
+        <a href="#linktotop">gemma</a>
+
+      </div>
       <div id="topSocial">
-        <a href="#linktotop"><img id="icon" src="media/logoGB.svg" ></a> 
-        <a href="#linktoprojects">projects</a>       
-        <a href="#linkaboutme">about me</a> 
+        <a href="#linktoservices">services</a>      
+        <a href="#linktoportfolio">portfolio</a>
+        <a href="#linkaboutme">about</a> 
+        <a href="#linktocontat">contact</a>
       </div>
     </nav>
   </header>
@@ -28,18 +35,29 @@
     <a id="linktotop"></a>  
     
     <div id="bigTitleContainer">
-      <div id="bigTitle">
-        Gemma Ben&iacutetez
-      </div>
-      <hr class="right" />
-      <div id="bigSecondTitle">
-        Computer Engineer & UX/UI Designer <br /> Located in  Berlin, Germany 
+      <div id="bigTitleContinerLeft">
+        <div id="bigTitle">
+          <p>
+         Welcome! </br>
+         I'm <a href="#linkaboutme" >Gemma Ben&iacutetez</a>
+        </p>
+       </div>
+       <div id="smallTitle">
+         <p>
+         UX/UI Designer & Developer </br>
+         Freelancing in Berlin</br> 
+        </p>
+        <a href="#linktocontat"><img src="media/Button.png" alt="contact me!" ></a>
+       </div>
+     </div>
+      <div id="bigimage">
+        <img src="media/bigimage.png" alt="Profile Picture" >
       </div>
     </div>
 
     <!--PROJECTS-->
     <a id="linktoprojects"></a>
-    <span style="display:block; height: 80px;"></span>
+    <span style="display:block; height: 60px;"></span>
     <br />
     <div class="bigContainerProjects">
       <div class="smallContainerTitle">
@@ -54,17 +72,17 @@
         <div class="contentText">
           <a href="https://medium.com/@gemmabenitez/a-microsite-for-idba-c7e8e47bf06e?sk=a769d49ba3b8645826614709b53c8abf" target="_blank">
             <img src="media/BurgerAwardsTitle.gif" alt="IDBA Title">
-           <center>
+            <div class="text">
               Microsite for the event Indie Developer Burger Awards. [Sketch, Principle]  
-           </center>
+            </div>
           </a>
         </div>
         <div class="contentText">
           <a href="https://medium.com/@gemmabenitez/siemens-playground-3e081556934f" target="_blank">  
             <img src="media/SiemensPlayground.png" alt="Siemens Playground Menu">
-            <center>
+            <div class="text">
               Game to entertain the Siemens kids while they are on the parents-kids office. [Sketch, Principle]   
-            </center>
+            </div>
           </a>
         </div>
       </div>
@@ -80,7 +98,7 @@
       </div>
       <div class="containerContentAbout">
         <img src="media/ProfileImage.jpg" alt="Profile Picture" >
-        <div class="contentText">
+        <div class="contentTextAbout">
         <!--  Eager to learn and apply new concepts and technologies, strong interest in mobile platforms and design thinking, demonstrated experience in business management and leading an IT department, as well as working in a team that follows ITIL and agile methodologies -->
 			Hi! My name is Gemma, I like to define myself as a passionate designer, dreamer of futuristic apps, and junior developer. <br /> You've got something in mind?  I'll be happy to talk to you. Contact me! 
         </div>
@@ -92,8 +110,8 @@
         <a href="mailto:gbenitezterreu@gmail.com" target="_blank">gbenitezterreu@gmail.com</a>
       </p>
       <div>
-        <a href="https://www.linkedin.com/in/gemmabenitez/" target="_blank"><img src="media/linkedinLogo.png" height="20"></a>    &nbsp;&nbsp;&nbsp;
-        <a href="https://medium.com/@gemmabenitez" target="_blank"><img src="media/MediumLogo.png" height="20"></a> 
+        <a class="contactmeLink" href="https://www.linkedin.com/in/gemmabenitez/" target="_blank"><img src="media/linkedinLogo.png" height="20"></a>    &nbsp;&nbsp;&nbsp;
+        <a class="contactmeLink" href="https://medium.com/@gemmabenitez" target="_blank"><img src="media/MediumLogo.png" height="20"></a> 
       </div>
     </div>
     
