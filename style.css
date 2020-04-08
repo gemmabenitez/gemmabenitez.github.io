@@ -18,7 +18,10 @@ html{
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bai Jamjuree';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
   height: 100%; 
   margin-top: 0px;
 }
@@ -46,6 +49,7 @@ a:link, a:visited, a:active {
 a:hover {
   text-decoration: underline;
 }
+
 a.contactmeLink:hover img{
     transform: scale(1.4);
 }
@@ -245,6 +249,7 @@ nav {
     justify-elements: center;
     align-items: center;
   }
+
   .bigContainerRow{
     position: relative;
     height: calc(100% - 170px);
@@ -310,6 +315,23 @@ nav {
     z-index: 2;
     position: absolute;
   }
+
+  #textAbout {
+    font-family: 'Bai Jamjuree';
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    padding: 5%
+  }
+
+  #aboutimage{
+    flex-grow: 1;
+    margin-left: 0px;
+    text-align:  left;
+    margin-top: auto;
+  }
+
 
   .bigContainerAbout{
     position: relative;
@@ -498,13 +520,16 @@ nav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 50px;
+  font-family: 'Bai Jamjuree';
+  font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10%
 }
-
+.contactme img{
+  padding: 8px;
+}
 /* End About Me Page*/
 
 
@@ -516,7 +541,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
