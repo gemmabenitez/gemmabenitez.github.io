@@ -59,7 +59,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    width: 15%;
+    width: 300px;
     border-top: 10px solid #D62598;
 	padding: 0;
 }
@@ -598,7 +598,7 @@ nav {
   font-weight: 200;
   font-size: 25px;
   text-align: center;
-  padding-top: 10%
+  padding-top: 5%;
 }
 .contactme img{
   padding: 8px;
