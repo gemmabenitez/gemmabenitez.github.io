@@ -314,6 +314,14 @@ nav {
     left: 10%
   }
 
+  #icon1:hover,#icon2:hover,#icon3:hover,#icon4:hover,#icon5:hover {
+    transform: scale(1.2); 
+  }
+  
+  #icon1:active, #icon2:active, #icon3:active, #icon4:active, #icon5:active {
+    transform: translateY(3px);
+  }
+
   #infoProject1 {
     display: none;
   }
