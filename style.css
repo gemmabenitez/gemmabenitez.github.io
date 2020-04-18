@@ -8,7 +8,7 @@ html{
 
 img{
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 button {
   background: transparent;
@@ -25,20 +25,57 @@ button {
   height: 100%;
 }
 
+a:link, a:visited, a:active {
+  text-decoration: none; color: #C906A1;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.contactmeLink:hover img{
+  transform: scale(1.4);
+}
+
+header{
+  background: white;
+  z-index: 99;
+}
+
+/* Pink Line */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  width: 300px;
+  border-top: 10px solid #D62598;
+padding: 0;
+}
+
 body {
   font-family: 'Bai Jamjuree';
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
+  font-weight: 200;
+  line-height: 25px;
   height: 100%; 
   margin-top: 0px;
 }
-@media screen and (min-width: 701px) {
+
+@media screen and (min-width: 1441px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
   body {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 769px) {
   body {
     font-size: 14px;
   }
@@ -49,45 +86,10 @@ body {
   }
 }
 
-a:link, a:visited, a:active {
-  text-decoration: none; color: #C906A1;
-  margin-left: auto;
-  margin-right: auto;
-}
-a:hover {
-  text-decoration: underline;
-}
 
-a.contactmeLink:hover img{
-    transform: scale(1.4);
-}
-
-/* Pink Line */
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    width: 300px;
-    border-top: 10px solid #D62598;
-	padding: 0;
-}
-hr.right{
-    margin: 1em 0;
-    margin-left: 40%;
-}
-
-hr.left{
-    margin: 0 1em;
-    margin-right: 40%;
-}
-
-
-header{
-  background: white;
-  z-index: 99;
-}
 
 /* Start Nav Seccion */
+/*!Need to adapt to phone, the menu will change*/
 nav {
   display: flex;
   width: 100%;
@@ -100,18 +102,54 @@ nav {
   z-index: 100;
   background: white;
 }
+@media screen and (min-width: 780px) {
+  nav {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  nav {
+    height: 50px;
+  }
+}
+
 
 #icon{
   font-family: 'Beth Ellen';
-  font-size: 34.5px;
   flex-grow: 1;
   text-align: left;
   margin-left: 2%;
+}
+@media screen and (min-width: 1441px) {
+  #icon {
+    font-size: 36.5px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #icon {
+    font-size: 34.5px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #icon {
+    font-size: 32.5px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #icon {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #icon {
+    font-size: 22px;
+  }
 }
 
 #icon a{
   color: #C906A1;
 }
+
 
 #topSocial{
   margin-right: 5%;
@@ -120,13 +158,53 @@ nav {
   align-items: flex-start;
   font-family: 'Bai Jamjuree';
   font-weight: 600;
-  font-size: 20px;
   
 }
 #topSocial a {
   margin-left: 10px;
   padding-right: 30px;
   color: black;
+}
+@media screen and (min-width: 1441px) {
+  #topSocial{
+    font-size: 20px;
+  }
+  #topSocial a {
+    margin-left: 10px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #topSocial{
+    font-size: 20px;
+  }
+  #topSocial a {
+    margin-left: 10px;
+    padding-right: 30px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #topSocial{
+    font-size: 18px;
+  }
+  #topSocial a {
+    margin-left: 10px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #topSocial{
+    font-size: 14px;
+  }
+  #topSocial a {
+    margin-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  #topSocial{
+    display: none;
+  }
 }
 
 /* End Nav Seccion*/
@@ -143,11 +221,7 @@ nav {
   flex-direction: row;
   justify-content: center;
 }
-#bigTitleContainer img { 
- /* max-height: 100%;
-  max-width: 100%;*/
-  
-}
+
 
 #bigTitleContinerLeft{
   flex-grow: 1;
@@ -160,30 +234,94 @@ nav {
 #bigTitle{
   font-family: 'Bai Jamjuree';
   font-weight: 300;
-  line-height: 106px;
 }
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 1441px) {
   #bigTitle {
-    font-size: 85px;
+    font-size: 90px;
+    line-height: 106px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1440px) {
   #bigTitle {
-    font-size: 60px;
+    font-size: 80px;
+    line-height: 106px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #bigTitle {
+    font-size: 75px;
+    line-height: 106px;
+  }
+}
+@media screen and (max-width: 769px) {
+  #bigTitle {
+    font-size: 55px;
+    line-height: 76px;
   }
 }
 @media screen and (max-width: 450px) {
   #bigTitle {
     font-size: 40px;
+    line-height: 56px;
   }
 }
+
 
 #smallTitle{
   font-family: 'Bai Jamjuree';
   font-weight: 500;
-  font-size: 36.5px;
-  line-height: 46px;
 }
+#smallTitle img{
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+@media screen and (min-width: 1441px) {
+  #smallTitle {
+    font-size: 36.5px;
+    line-height: 46px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #smallTitle {
+    font-size: 36.5px;
+    line-height: 46px;
+  }
+  #smallTitle img{
+    max-width: 40%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #smallTitle {
+    font-size: 30.5px;
+    line-height: 46px;;
+  }
+  #smallTitle img{
+    max-width: 40%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 769px) {
+  #smallTitle {
+    font-size: 25px;
+    line-height: 46px;
+  }
+  #smallTitle img{
+    max-width: 40%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  #smallTitle {
+    font-size: 22.5px;
+    line-height: 40px;
+  }
+  #smallTitle img{
+    max-width: 40%;
+    height: auto;
+  }
+}
+
 
 #bigimage{
   flex-grow: 1;
@@ -191,388 +329,368 @@ nav {
   text-align:  right;
   margin-top: auto;
 }
+@media screen and (max-width: 450px) {
+  #bigimage {
+    display: none;
+  }
+}
+
 #bigimage img{
   margin-top:auto;
   margin-right: 0px;
   vertical-align: text-bottom;
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 
-#bigSecondTitle{
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 10px;
-}
-@media screen and (min-width: 701px) {
-  #bigSecondTitle {
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 700px) {
-  #bigSecondTitle {
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 450px) {
-  #bigSecondTitle {
-    font-size: 12px;
-  }
-}
-
-.projectsTitle{
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  text-align: left;
-  margin-top: 10px;
-}
-
-@media screen and (min-width: 701px) {
-  .projectsTitle{
-    font-size: 25px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .projectsTitle{
-    font-size: 18px;
-  }
-}
-@media screen and (max-width: 450px) {
-  .projectsTitle{
-    font-size: 12px;
-  }
-}
 /* End Big Name Page */
 
 
 /* Start Main Page*/
-@media screen and (min-width: 741px) {
 
-  .bigContainerColumn{
-    position: relative;
-    height: calc(100% - 170px);
-    width: 100%;
-    display: grid;
-    grid-template-rows: 15% auto;
-    grid-row-gap: 2%;
-    justify-elements: center;
-    align-items: center;
-  }
+.bigContainerColumn{
+  position: relative;
+  height: calc(100% - 170px);
+  width: 100%;
+  display: grid;
+  grid-template-rows: 15% auto;
+  grid-row-gap: 2%;
+  align-items: center;
+}
 
-  .bigContainerRow{
-    position: relative;
-    height: calc(100% - 170px);
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
-  .containerTitlePage{
-    font-family: 'Bai Jamjuree';
-    font-weight: 500;
+.containerTitlePage{
+  font-family: 'Bai Jamjuree';
+  font-weight: 500;
+  text-align: center;
+}
+@media screen and (min-width: 1441px) {
+  .containerTitlePage {
     font-size: 65px;
     line-height: 81px;
-    text-align: center;
-  }
-
-  .containerObjects{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-
-  .containerProjects{
-    display: grid;
-    grid-template-columns: 40.5% auto;
-  }
-
-  #mockup {
-    position: relative;
-    justify-self: center;
-  }
-
-  #icon1{
-    position: absolute;
-    top: 10%;
-    left: 10%
-  }
-
-  #icon2{
-    position: absolute;
-    top: 10%;
-    left: 40%
-  }
-
-  #icon3{
-    position: absolute;
-    top: 25%;
-    left: 10%
-  }
-
-  #icon4{
-    position: absolute;
-    top: 25%;
-    left: 40%
-  }
-
-  #icon5{
-    position: absolute;
-    top: 40%;
-    left: 10%
-  }
-
-  #icon1:hover,#icon2:hover,#icon3:hover,#icon4:hover,#icon5:hover {
-    transform: scale(1.2); 
-  }
-  
-  #icon1:active, #icon2:active, #icon3:active, #icon4:active, #icon5:active {
-    transform: translateY(3px);
-  }
-
-  #infoProjects {
-    position: relative;
-  }
-
-  #infoProject1 {
-    display: none;
-    flex-direction: column;
-  }
-  #infoProject2 {
-    display: none;
-    flex-direction: column;
-  }
-  #infoProject3 {
-    display: none;
-    flex-direction: column;
-  }
-  #infoProject4 {
-    display: none;
-    flex-direction: column;
-  }
-  #infoProject5 {
-    display: none;
-    flex-direction: column;
-  }
-
-
-  .projectTitle{
-    font-family: 'Bai Jamjuree';
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 44px;
-    padding: 40px 35px;
-    text-align: left;
-  }
-
-  .withShadow {
-    box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
-    max-width: 70%; 
-    height: auto;
-  }
-
-  .bottomDiv {
-    position: absolute;
-    left: 40px;
-    bottom: 25%;
-  }
-
-  .projectText{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-  }
-  .projectText img{
-    padding: 40px 0px;
-    max-width: 100%;
-    height: auto;
-  }
-
-  #projectText1{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-    display: block;
-  }
-  #projectText2{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-    display: none;
-  }
-  #projectText3{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-    display: none;
-  }
-  #projectText4{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-    display: none;
-  }
-  #projectText5{
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 40px 35px;
-    display: none;
-  }
-
-  .smallContainerTitle{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .cardServicesTitle{
-    font-family: 'Bai Jamjuree';
-    font-weight: 500;
-    font-size: 35px;
-    line-height: 44px;
-    padding: 40px 35px;
-    align-self: flex-start;
-  }
-
-  .cardServices{
-    box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
-    border-radius: 25px;
-    position: relative;
-    height: 100%;
-    width: 20%;
-    z-index: 1;
-  }
-
-  .cardServicesDescr{
-    font-family: 'Bai Jamjuree';
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    padding-top: 80%;
-    padding-left: 40px; 
-    padding-bottom: 50px;
-    z-index: 3;
-  }
-
-  .cardServices img{
-    z-index: 2;
-    position: absolute;
-    max-width: 100%;
-    height: auto;
-    
-  }
-
-  #textAbout {
-    font-family: 'Bai Jamjuree';
-    font-weight: 200;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: left;
-    padding: 5%
-  }
-
-  #aboutimage{
-    flex-grow: 1;
-    margin-left: 0px;
-    text-align:  left;
-    margin-top: auto;
-  }
-
-  #aboutimage img{
-    max-width: 100%;
-    height: auto;
-  }
-
-
-  .bigContainerAbout{
-    position: relative;
-    height: calc(100% - 170px);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .bigContainerRight{
-    position: relative;
-    height: calc(100% - 170px);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-
-  .containerContentProjects{
-    flex-grow: 3;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .containerContentAbout{
-    flex-grow: 3;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-  .containerTitle {
-    flex-grow: 2;
-    position: relative;
-    max-width: 100%;
-	  font-family: 'Poiret One', cursive;
-	  text-align: center;
-	  line-height: 1;
-  }
-
-  .containerContentProjects img{
-    max-width: 30vw;
-    max-height: 30vw;
-    flex-grow: 1;
-    padding: 5%;
-    margin-left: auto;
-    margin-right: auto;
-
-  }
-   
-  .contentText{
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-  }
-
-  .contentTextAbout{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 20vw;
-    margin-bottom: 30px;
-  }
-
-  .text{
-    max-width: 30vw;
-    height: auto;
-    text-align: center;
   }
 }
+@media screen and (max-width: 1440px) {
+  .containerTitlePage {
+    font-size: 55px;
+    line-height: 75px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .containerTitlePage {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .containerTitlePage {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .containerTitlePage {
+    font-size: 30px;
+    line-height: 56px;
+  }
+}
+
+
+
+.containerObjects{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.containerProjects{
+  display: grid;
+  grid-template-columns: 40.5% auto;
+}
+
+#mockup {
+  position: relative;
+  justify-self: center;
+}
+
+#icon1{
+  position: absolute;
+  top: 10%;
+  left: 10%
+}
+
+#icon2{
+  position: absolute;
+  top: 10%;
+  left: 40%
+}
+
+#icon3{
+  position: absolute;
+  top: 25%;
+  left: 10%
+}
+
+#icon4{
+  position: absolute;
+  top: 25%;
+  left: 40%
+}
+
+#icon5{
+  position: absolute;
+  top: 40%;
+  left: 10%
+}
+
+#icon1:hover,#icon2:hover,#icon3:hover,#icon4:hover,#icon5:hover {
+  transform: scale(1.2); 
+}
+
+#icon1:active, #icon2:active, #icon3:active, #icon4:active, #icon5:active {
+  transform: translateY(3px);
+}
+
+#infoProjects {
+  position: relative;
+}
+
+#infoProject1 {
+  display: none;
+  flex-direction: column;
+}
+#infoProject2 {
+  display: none;
+  flex-direction: column;
+}
+#infoProject3 {
+  display: none;
+  flex-direction: column;
+}
+#infoProject4 {
+  display: none;
+  flex-direction: column;
+}
+#infoProject5 {
+  display: none;
+  flex-direction: column;
+}
+
+
+.projectTitle{
+  font-family: 'Bai Jamjuree';
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 44px;
+  padding: 10px 35px 20px 35px;
+  text-align: left;
+}
+
+.withShadow {
+  box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
+  max-width: 70%; 
+  max-height: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.bottomDiv {
+  position: absolute;
+  left: 40px;
+  bottom: 15%;
+}
+
+.projectText{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 20px 55px 20px 35px;
+}
+.projectText img{
+  padding: 40px 0px;
+  max-width: 100%;
+
+  height: auto;
+}
+
+#projectText1{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 40px 35px;
+  display: block;
+}
+#projectText2{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 40px 35px;
+  display: none;
+}
+#projectText3{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 40px 35px;
+  display: none;
+}
+#projectText4{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 40px 35px;
+  display: none;
+}
+#projectText5{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 40px 35px;
+  display: none;
+}
+
+.smallContainerTitle{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cardServicesTitle{
+  font-family: 'Bai Jamjuree';
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 44px;
+  padding: 40px 35px;
+  align-self: flex-start;
+}
+
+.cardServices{
+  box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
+  border-radius: 25px;
+  position: relative;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+}
+
+.cardServicesDescr{
+  padding-top: 80%;
+  padding-left: 40px; 
+  padding-bottom: 50px;
+  z-index: 3;
+}
+
+.cardServices img{
+  z-index: 2;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+#textAbout {
+  font-family: 'Bai Jamjuree';
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+  padding: 5%
+}
+
+#aboutimage{
+  flex-grow: 1;
+  margin-left: 0px;
+  text-align:  left;
+  margin-top: auto;
+}
+
+#aboutimage img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+.bigContainerAbout{
+  position: relative;
+  height: calc(100% - 170px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bigContainerRight{
+  position: relative;
+  height: calc(100% - 170px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.containerContentProjects{
+  flex-grow: 3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerContentAbout{
+  flex-grow: 3;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+.containerTitle {
+  flex-grow: 2;
+  position: relative;
+  max-width: 100%;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+  line-height: 1;
+}
+
+.containerContentProjects img{
+  max-width: 30vw;
+  max-height: 30vw;
+  flex-grow: 1;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+ 
+.contentText{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.contentTextAbout{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 20vw;
+  margin-bottom: 30px;
+}
+
+.text{
+  max-width: 30vw;
+  height: auto;
+  text-align: center;
+}
+
+
 
 @media screen and (max-width: 740px) {
 
@@ -700,7 +818,9 @@ nav {
     height: auto;
   padding: 8px;
 }
+
 /* End About Me Page*/
+
 
 
 footer {
