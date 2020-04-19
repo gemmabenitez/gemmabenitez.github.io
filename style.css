@@ -47,7 +47,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  width: 300px;
+  width: 20%;
   border-top: 10px solid #D62598;
 padding: 0;
 }
@@ -59,7 +59,6 @@ body {
   height: 100%; 
   margin-top: 0px;
 }
-
 @media screen and (min-width: 1441px) {
   body {
     font-size: 20px;
@@ -72,17 +71,17 @@ body {
 }
 @media screen and (max-width: 1280px) {
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 769px) {
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 450px) {
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
@@ -350,12 +349,24 @@ nav {
 
 .bigContainerColumn{
   position: relative;
-  height: calc(100% - 170px);
-  width: 100%;
-  display: grid;
-  grid-template-rows: 15% auto;
-  grid-row-gap: 2%;
-  align-items: center;
+
+}
+@media screen and (min-width: 601px) {
+  .bigContainerColumn{
+    height: calc(100% - 170px);
+    width: 100%;
+    display: grid;
+    grid-template-rows: 15% auto;
+    grid-row-gap: 2%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .bigContainerColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .containerTitlePage{
@@ -377,13 +388,13 @@ nav {
 }
 @media screen and (max-width: 1280px) {
   .containerTitlePage {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 70px;
   }
 }
 @media screen and (max-width: 769px) {
   .containerTitlePage {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 60px;
   }
 }
@@ -398,9 +409,76 @@ nav {
 
 .containerObjects{
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
+
+.cardServicesTitle{
+  font-family: 'Bai Jamjuree';
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.cardServices{
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .cardServicesTitle{
+    font-size: 30px;
+    line-height: 44px;
+    padding: 40px 35px;
+  }
+}
+@media screen and (min-width: 601px) {
+  .containerObjects{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .cardServicesTitle{
+    font-size: 35px;
+    line-height: 44px;
+    padding: 40px 35px;
+  }
+  .cardServices{
+    box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
+    border-radius: 25px;
+    height: 100%;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .containerObjects{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .cardServicesTitle{
+    font-size: 25px;
+    line-height: 25px;
+    padding: 40px 35px;
+  }
+  .cardServices{
+    height: auto;
+    width: 80%;
+    margin: auto; 
+  }
+}
+
+.cardServicesDescr{
+  padding-top: 80%;
+  padding-left: 40px; 
+  padding-bottom: 50px;
+  z-index: 3;
+}
+
+.cardServices img{
+  z-index: 2;
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  margin: auto 10%;
+}
+
+
 
 .containerProjects{
   display: grid;
@@ -560,38 +638,6 @@ nav {
   flex-wrap: wrap;
 }
 
-.cardServicesTitle{
-  font-family: 'Bai Jamjuree';
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 44px;
-  padding: 40px 35px;
-  align-self: flex-start;
-}
-
-.cardServices{
-  box-shadow: 2px 2px 5px rgba(61, 43, 129, 0.25);
-  border-radius: 25px;
-  position: relative;
-  height: 100%;
-  width: 20%;
-  z-index: 1;
-}
-
-.cardServicesDescr{
-  padding-top: 80%;
-  padding-left: 40px; 
-  padding-bottom: 50px;
-  z-index: 3;
-}
-
-.cardServices img{
-  z-index: 2;
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  
-}
 
 #textAbout {
   font-family: 'Bai Jamjuree';
