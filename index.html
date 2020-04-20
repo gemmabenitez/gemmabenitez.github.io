@@ -97,7 +97,7 @@
         <div id="phone">
           <img id="mockup" src="media/Mockup.png">
           <div id="icons">
-          <button onclick="apearProject('1')" style="border: 0px; image-with: 0px;" ><img id="icon1" src="media/EASYRIDER.png"></button>
+          <button onclick="apearProject('1')" style="border: 0px"><img id="icon1" src="media/EASYRIDER.png"></button>
           <button onclick="apearProject('2')" style="border: 0px"><img id="icon2" src="media/idba.png"></button>
           <button onclick="apearProject('3')" style="border: 0px"><img id="icon3" src="media/FastFood.png"></button>
           <button onclick="apearProject('4')" style="border: 0px"><img id="icon4" src="media/siemens.png"></button>
@@ -106,6 +106,8 @@
         </div>
         <div id="infoProjects">
           <div id="infoProject1" style="display: flex">
+            <button onclick="firstProject('1')"><img src="media/before.png" class="beforeProject"></button>
+            <button onclick="nextProject('1')"><img src="media/next.png" class="nextProject"></button>
             <div class="projectTitle">
                 easyRIDER
             </div>
@@ -115,82 +117,73 @@
             </div>
           </div>
           <div id="infoProject2">
+            <button onclick="beforeProject('2')"><img src="media/before.png" class="beforeProject"></button>
+            <button onclick="nextProject('2')"><img src="media/next.png" class="nextProject"></button>
             <div class="projectTitle">Microsite for IDBA</div>
             <div class="projectText">
               In this case, as part of the UX/UI Design Bootcamp at IronHack, the assignment was to design a microsite for any event that we chose. </br></br> I was looking for something that inspired me, as for that I started looking for events that I had already visited in the past. In 2018 I had the opportunity to attend to the Indie Developer Burguer Awards as a representative of the indie studio Kraftum Games and I loved it. The awards are very entertaining and are a great opportunity to meet new people in the game industry. </br></br>
-            </br></br>Stock used: Sketch, Principle.  </br>
+            </br></br>Stock used: Sketch, Principle.  </br></br></br>
               <a href="https://medium.com/@gemmabenitez/a-microsite-for-idba-c7e8e47bf06e?sk=a769d49ba3b8645826614709b53c8abf" target="_blank">
-                <img src="media/ButtonInfo.png" alt="More Info"></a>
+                view full case study at Medium...</a>
             </div>
           </div>
           <div id="infoProject3">
+            <button onclick="beforeProject('3')"><img src="media/before.png" class="beforeProject"></button>
+            <button onclick="nextProject('3')"><img src="media/next.png" class="nextProject"></button>
             <div class="projectTitle">FastFood</div>
           <div class="projectText">
             FastFood is a concept game. </br></br> It is a hyper-casual version of Cooking Fever where one should serve the food as fast as possible and be careful not to serve the wrong order.
             </br></br></br>Stock used: Sketch, Principle.  </br>
           </div></div>
           <div id="infoProject4">
+            <button onclick="beforeProject('4')"><img src="media/before.png" class="beforeProject"></button>
+            <button onclick="nextProject('4')"><img src="media/next.png" class="nextProject"></button>
             <div class="projectTitle">SiemensPlayground</div>
             <div class="projectText">
               Everything started when Siemens Mobility was building a new type of office, where workers could go to work with their kids. </br> That is when they found the necessity to build an app to entertain the kids and at the same time show what their parents do at work.The app would be installed on the office iPads and used by kids between 4 and 8 years old. </br></br>
               <a href="http://alexandre-mauro.com/" target="_blank">Alexandre Mauro</a> and I team up and started together this 12 days assignment as our las project in the Ironhack UX/UI Bootcamp
-            </br></br></br>Stock used: Sketch, Illustrator, Principle. </br>
+            </br></br></br>Stock used: Sketch, Illustrator, Principle. </br></br></br>
             <a href="https://medium.com/@gemmabenitez/siemens-playground-3e081556934f" target="_blank">
-              <img src="media/ButtonInfo.png" alt="More Info"></a>
+              view full case study at Medium...</a>
             </div></div>
           <div id="infoProject5">
+            <button onclick="beforeProject('5')"><img src="media/before.png" class="beforeProject"></button>
+            <button onclick="lastProject('5')"><img src="media/next.png" class="nextProject"></button>
             <div class="projectTitle">Hologram</div>
             <div id="projectText1">
+              <img src="media/MainScreen.jpg" >
+              </br>
+              <button onclick="firstpage('5')"><img src="media/before.png" class="beforePage"></button>
+              <button onclick="changepage('1')"><img src="media/next.png" class="nextPage"></button>
+            </div>
+            <div id="projectText2">
+              <img src="media/LoadGame.jpg">
+              </br>
+              <button onclick="beforepage('2')"><img src="media/before.png" class="beforePage"></button>
+              <button onclick="changepage('2')"><img src="media/next.png" class="nextPage"></button>
+            </div>
+            <div id="projectText3">
+              <img src="media/SettingsAudio.jpg">
+              </br>
+              <button onclick="beforepage('3')"><img src="media/before.png" class="beforePage"></button>
+              <button onclick="changepage('3')"><img src="media/next.png" class="nextPage"></button>
+            </div>
+            <div id="projectText4">
+              <img src="media/PauseMenu.jpg">
+              </br>
+              <button onclick="beforepage('4')"><img src="media/before.png" class="beforePage"></button>
+              <button onclick="changepage('4')"><img src="media/next.png" class="nextPage"></button>
+            </div>
+            <div id="projectText5">
               Hologram is a work in progress game where I'm working as UX/UI Design at <a href="http://kraftumgames.com/" target="_blank">KraftumGames</a>. </br></br>
               It is our first retro-futuristic console/PC game that can be classified as an Isometric Voxel-Art Adventure, TBA.
             </br></br></br>Stock used: Sketch, Unity.  </br>
-            <button onclick="changepage('1')"><img src="media/nextpage.png" class="bottomDiv"></button>
+            <button onclick="beforepage('5')"><img src="media/before.png" class="beforePage"></button>
+            <button onclick="lastpage('5')"><img src="media/next.png" class="nextPage"></button>
             </div>
-            <div id="projectText2">
-              <img src="media/MainScreen.jpg" class="withShadow">
-              </br>
-              <button onclick="changepage('2')"><img src="media/nextpage.png" class="bottomDiv"></button>
-            </div>
-            <div id="projectText3">
-              <img src="media/LoadGame.jpg" class="withShadow">
-              </br>
-              <button onclick="changepage('3')"><img src="media/nextpage.png" class="bottomDiv"></button>
-            </div>
-            <div id="projectText4">
-              <img src="media/SettingsAudio.jpg" class="withShadow">
-              </br>
-              <button onclick="changepage('4')"><img src="media/nextpage.png" class="bottomDiv"></button>
-            </div>
-            <div id="projectText5">
-              <img src="media/PauseMenu.jpg" class="withShadow">
-              </br>
-              <button onclick="lastpage('5')"><img src="media/nextpage.png" class="bottomDiv"></button>
-            </div>
-            
-        
           </div>
         </div>
       </div>
-
-      <!--
-      <div class="containerContentProjects">
-        <div class="contentText">
-          <a href="https://medium.com/@gemmabenitez/a-microsite-for-idba-c7e8e47bf06e?sk=a769d49ba3b8645826614709b53c8abf" target="_blank">
-            <img src="media/BurgerAwardsTitle.gif" alt="IDBA Title">
-            <div class="text">
-              Microsite for the event Indie Developer Burger Awards. [Sketch, Principle]  
-            </div>
-          </a>
-        </div>
-        <div class="contentText">
-          <a href="https://medium.com/@gemmabenitez/siemens-playground-3e081556934f" target="_blank">  
-            <img src="media/SiemensPlayground.png" alt="Siemens Playground Menu">
-            <div class="text">
-              Game to entertain the Siemens kids while they are on the parents-kids office. [Sketch, Principle]   
-            </div>
-          </a>
-        </div>
-      </div>-->
     </div>
       
     <!--ABOUT ME-->
@@ -198,7 +191,7 @@
     <span style="display:block; height: 60px;"></span>
     </br>
     
-    <div class="bigContainer">
+    <div class="lastContainer">
       <div class="containerTitlePage">
         about
         <hr />
@@ -227,31 +220,15 @@
       </div>
 
     </div>
-<!--
-    <div class="contactme">
-      <p>
-        <a href="mailto:gbenitezterreu@gmail.com" target="_blank">gbenitezterreu@gmail.com</a>
-      </p>
-      <div>
-        <a class="contactmeLink" href="https://www.linkedin.com/in/gemmabenitez/" target="_blank"><img src="media/linkedinLogo.png" height="20"></a>    &nbsp;&nbsp;&nbsp;
-        <a class="contactmeLink" href="https://medium.com/@gemmabenitez" target="_blank"><img src="media/MediumLogo.png" height="20"></a> 
-      </div>
+    <div id="foot">
+    <div id="phoneText">
+      <p> Enjoy the full expirience in a large screen</p>
     </div>
-  -->
+    
+     <p> designed and developed with love by myself (Figma, HTML, CSS, JS)</p>
+     </div>
   </body>
 
 
- <footer>
-    <p> designed (Figma) and developed (HTML, CSS, JS) with love by myself</p>
-   <!--  <p>
-       <a href="mailto:gbenitezterreu@gmail.com" target="_blank">gbenitezterreu@gmail.com</a>
-    </p>
-    <div>
-       <a href="https://www.linkedin.com/in/gemmabenitez/" target="_blank"><img src="media/linkedinLogo.png" height="20"></a>   &nbsp;&nbsp;&nbsp;
-       <a href="https://medium.com/@gemmabenitez" target="_blank"><img src="media/MediumLogo.png" height="20"></a>
-    </div>-->
-  </footer>
-
-  
 </html>
 		

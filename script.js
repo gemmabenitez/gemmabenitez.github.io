@@ -19,3 +19,30 @@ function apearProject(id) {
     document.getElementById('projectText'+ id).style.display = "none";
     document.getElementById('projectText'+ ('1')).style.display = 'block';
   }
+
+  function beforepage(id) {
+    document.getElementById('projectText'+ id).style.display = "none";
+    document.getElementById('projectText'+ (--id)).style.display = 'block';
+  }
+  function firstpage(id){
+    document.getElementById('projectText'+ ('1')).style.display = "none";
+    document.getElementById('projectText'+ id).style.display = 'block';
+  }
+
+  function nextProject(id) {
+    document.getElementById('infoProject'+ id).style.display = "none";
+    document.getElementById('infoProject'+ (++id)).style.display = 'block';
+  }
+  function lastProject(id){
+    document.getElementById('infoProject'+ id).style.display = "none";
+    document.getElementById('infoProject'+ ('1')).style.display = 'block';
+  }
+
+  function beforeProject(id) {
+    document.getElementById('infoProject'+ id).style.display = "none";
+    document.getElementById('infoProject'+ (--id)).style.display = 'block';
+  }
+  function firstProject(id){
+    document.getElementById('infoProject'+ ('1')).style.display = "none";
+    document.getElementById('infoProject'+ id).style.display = 'block';
+  }
