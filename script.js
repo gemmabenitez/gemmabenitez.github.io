@@ -11,22 +11,22 @@ function apearProject(id) {
     document.getElementById('infoProject'+id).style.display = 'flex';
   }
 
-  function changepage(id) {
-    document.getElementById('projectText'+ id).style.display = "none";
-    document.getElementById('projectText'+ (++id)).style.display = 'block';
+  function changepage(proj, id) {
+    document.getElementById('projectText'+ proj + id).style.display = "none";
+    document.getElementById('projectText'+ proj + (++id)).style.display = 'block';
   }
-  function lastpage(id){
-    document.getElementById('projectText'+ id).style.display = "none";
-    document.getElementById('projectText'+ ('1')).style.display = 'block';
+  function lastpage(proj, id){
+    document.getElementById('projectText'+ proj + id).style.display = "none";
+    document.getElementById('projectText'+ proj + ('1')).style.display = 'block';
   }
 
-  function beforepage(id) {
-    document.getElementById('projectText'+ id).style.display = "none";
-    document.getElementById('projectText'+ (--id)).style.display = 'block';
+  function beforepage(proj, id) {
+    document.getElementById('projectText'+ proj + id).style.display = "none";
+    document.getElementById('projectText'+ proj + (--id)).style.display = 'block';
   }
-  function firstpage(id){
-    document.getElementById('projectText'+ ('1')).style.display = "none";
-    document.getElementById('projectText'+ id).style.display = 'block';
+  function firstpage(proj, id){
+    document.getElementById('projectText'+ proj + ('1')).style.display = "none";
+    document.getElementById('projectText'+ proj + id).style.display = 'block';
   }
 
   function nextProject(id) {
