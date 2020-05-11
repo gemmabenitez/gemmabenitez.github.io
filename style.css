@@ -472,20 +472,26 @@ nav {
 }
 
 .cardServicesDescr{
-  padding-top: 80%;
+  
   padding-left: 40px; 
   padding-bottom: 50px;
   z-index: 3;
 }
 
 .cardServices img{
+  text-align: center;
   z-index: 2;
-  position: absolute;
-  max-width: 100%;
+  /*position: absolute;*/
+  max-width: 80%;
   height: auto;
-  margin: 5% 5%;
+  margin: auto;
+  display: block;
 }
 
+.cardServicesImage {
+margin-left: auto;
+margin-right: auto;
+}
 
 
 .containerProjects{
